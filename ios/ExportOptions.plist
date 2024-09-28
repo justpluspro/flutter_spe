@@ -4,5 +4,7 @@
 <dict>
     <key>method</key>
     <string>app-store</string> <!-- 可选值: app-store, ad-hoc, enterprise, development -->
+    <key>teamId</key>
+    <string>228794754@qq.com</string>
 </dict>
 </plist>
