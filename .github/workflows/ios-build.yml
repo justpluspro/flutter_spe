@@ -35,7 +35,7 @@ jobs:
       - name: Sync certificates
         env:
           MATCH_PASSWORD: 123456  # 在 GitHub Secrets 中设置 MATCH_PASSWORD
-        run: fastlane match development  # 或者使用 production
+        run: fastlane match development  --git_url "https://github.com/justpluspro/test.git" # 或者使用 production
       
       # - name: Install dependencies
       #   run: flutter pub get
