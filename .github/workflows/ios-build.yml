@@ -13,6 +13,9 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - name: Install CocoaPods
+        run: sudo gem install cocoapods
+
       - name: Check out repository
         uses: actions/checkout@v3
 
@@ -20,6 +23,9 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.24.3'  # 替换为你实际使用的 Flutter 版本
+      
+      - name: Install dependencies
+        run: flutter pub get
 
       - name: Install CocoaPods
         run: |
