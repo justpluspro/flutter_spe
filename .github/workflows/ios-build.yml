@@ -40,7 +40,7 @@ jobs:
           xcodebuild -exportArchive -archivePath ${{ github.workspace }}/build/Runner.xcarchive -exportPath ${{ github.workspace }}/build -exportOptionsPlist ios/ExportOptions.plist
 
       - name: Upload IPA
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: MyFlutterApp.ipa
           path: build/*.ipa
